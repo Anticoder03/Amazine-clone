@@ -1,18 +1,65 @@
 import React from 'react'
 import './css/Navbar.css'
-
+import { IoLocationOutline } from "react-icons/io5";
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
+import { IoSearchSharp } from "react-icons/io5";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar flex items-center justify-between p-4 bg-gray-800 text-white">
+      <div className="navbar">
         <div className="left">
-            <span>
-                <img src="public\img\logo.png"   alt="logo" />
-            </span>
+            <div className="logo-section">
+                <img src="https://assets.aboutamazon.com/59/21/d658597b447d97f8bc9aef3362e0/logo-inverse-1.svg" alt="logo" />
+                <span>.in</span>
+            </div>
+            <div className="location-section">
+                <IoLocationOutline size={20} />
+                <div>
+                  <div className="location-label">Deliver to</div>
+                  <div className="location-text">Location</div>
+                </div>
+            </div>
         </div>
-        <div className="center"></div>
-        <div className="right"></div>
+        
+        <div className="center">
+            <div className="inputbox">
+                <select name="category" id="category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="books">Books</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+                <input type="text" name="search" id="search" placeholder='Search Amazon.in' />
+                <button className="search-btn">
+                  <IoSearchSharp size={20} />
+                </button>
+            </div>
+        </div>
 
+        <div className="right">
+            <div className="language-section">
+                <span>EN</span>
+            </div>
+            <div className="account-section">
+              <div className="account-text">
+                <div className="hello">Hello, User</div>
+                <div className="account">Account & Lists</div>
+              </div>
+            </div>
+            <div className="returns-section">
+              <div className="returns-text">
+                <div className="returns-label">Returns</div>
+                <div className="orders">& Orders</div>
+              </div>
+            </div>
+            <div className="cart-section">
+              <div className="cart-icon-wrapper">
+                <PiShoppingCartSimpleBold size={32} />
+                <span className="cart-count">1</span>
+              </div>
+              <span className="cart-text">Cart</span>
+            </div>
+        </div>
       </div>
     </>
   )
