@@ -5,9 +5,12 @@
   padding: 8px 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background-color: #131921;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 1000;
   color: white;
 }
 
