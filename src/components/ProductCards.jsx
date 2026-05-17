@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom'
 
 const ProductCards = ({ products, title }) => {
+  const navigate = useNavigate()
+
   return (
     <div className="w-full max-w-md bg-white p-4 rounded-lg shadow-md">
 
@@ -15,6 +18,7 @@ const ProductCards = ({ products, title }) => {
           <div
             key={product.id || product.name_sort}
             className="cursor-pointer hover:scale-105 transition-all duration-300"
+            onClick={() => navigate(`/product/${product.id}`)}
           >
             {/* Image Box */}
             <div className="bg-gray-100 rounded-lg overflow-hidden h-44 flex items-center justify-center">

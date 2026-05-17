@@ -6,7 +6,8 @@ const data = [
             "image": "product4.jpg",
             "price": 785,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 2,
@@ -15,7 +16,8 @@ const data = [
             "image": "product2.jpg",
             "price": 785,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 3,
@@ -24,7 +26,8 @@ const data = [
             "image": "product3.jpg",
             "price": 785,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 4,
@@ -33,7 +36,8 @@ const data = [
             "image": "product1.jpg",
             "price": 112,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"accessories"
         },
         {
             "id": 5,
@@ -42,7 +46,8 @@ const data = [
             "image": "product5.jpg",
             "price": 559,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 6,
@@ -51,7 +56,8 @@ const data = [
             "image": "product6.jpg",
             "price": 559,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 7,
@@ -60,7 +66,8 @@ const data = [
             "image": "product7.jpg",
             "price": 559,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 8,
@@ -69,7 +76,8 @@ const data = [
             "image": "product8.jpg",
             "price": 559,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"clothing"
         },
         {
             "id": 9,
@@ -78,7 +86,8 @@ const data = [
             "image": "product9.jpg",
             "price": 112,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"electronics"
         },
         {
             "id": 10,
@@ -87,7 +96,8 @@ const data = [
             "image": "product10.jpg",
             "price": 112,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"electronics"
         },
         {
             "id": 11,
@@ -96,7 +106,8 @@ const data = [
             "image": "product11.jpg",
             "price": 112,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"electronics"
         },
         {
             "id": 12,
@@ -105,7 +116,8 @@ const data = [
             "image": "product12.jpg",
             "price": 112,
             "rating": 4.8,
-            "reviews": 1500
+            "reviews": 1500,
+            "catogary":"electronics"
         },
         
     ]
@@ -114,42 +126,52 @@ const sliders = [
     {
         id: 1001,
         image: "slide-p-1.jpg",
+        catogary:"electronics"
     },
     {
         id: 1002,
         image: "slide-p-2.jpg",
+        catogary:"electronics"
     },
     {
         id: 1003,
         image: "slide-p-3.jpg",
+        catogary:"electronics"
     },
     {
         id: 1004,
         image: "slide-p-4.jpg",
+        catogary:"electronics"
     },
     {
         id: 1005,
         image: "slide-p-5.jpg",
+        catogary:"electronics"
     },
     {
         id: 1006,
         image: "slide-p-6.jpg",
+        catogary:"electronics"
     },
     {
         id: 1007,
         image: "slide-p-7.jpg",
+        catogary:"electronics"
     },
     {
         id: 1008,
         image: "slide-p-8.jpg",
+        catogary:"electronics"
     },
    {
         id: 1009,
         image: "slide-p-9.jpg",
+        catogary:"electronics"
    },
    {
         id: 1010,
         image: "slide-p-10.jpg",
+        catogary:"electronics"
    }
 ]
 
