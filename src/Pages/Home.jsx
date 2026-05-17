@@ -12,7 +12,7 @@ const Home = () => {
   const [catogary, setCategory] = useState("all");
   const [priceRange, setPriceRange] = useState("all");
   return (
-    <div style={{ paddingTop: '64px' }}>
+    <div>
       
        <Navbar setCategory={setCategory} setSearch={setSearch} />
        {search ? (

@@ -71,6 +71,7 @@ const Navbar = ({ setCategory, setSearch }) => {
             </div>
         </div>
       </div>
+        <div style={{ height: '64px' }} aria-hidden="true" />
       <div className='bottom_navbar'>
         <ul className='bottom_navbar_list'>
           <li><a href="/" onClick={(e) => { e.preventDefault(); navigate('/') }}>Home</a></li>
