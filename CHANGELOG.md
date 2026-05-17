@@ -6,6 +6,10 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 
 ## [Unreleased]
 
+### Fixed
+- Corrected product listing rendering and image paths in `src/components/ProductCards.jsx` so product images load from `public/img/products/` and product names display correctly.
+ - Fixed horizontal product list rendering in `src/components/ProductHorizontal.jsx` and corrected image paths to load from `public/img/products/`.
+
 ## [0.1.0] - 2026-05-14
 
 ### Added
