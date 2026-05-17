@@ -53,10 +53,10 @@ const Login = () => {
             </p>
 
             <div className="pt-4 border-t border-gray-200">
-              <h2 className="text-base font-semibold text-gray-900">Buying for work?</h2>
-              <a href="#" className="mt-1 inline-block text-[#007185] hover:underline">
-                Create a free business account
-              </a>
+              <h2 className="text-base font-semibold text-gray-900">New to Amazon?</h2>
+              <Link to="/register" className="mt-1 inline-block text-[#007185] hover:underline">
+                Create your Amazon account
+              </Link>
             </div>
           </div>
         </section>
