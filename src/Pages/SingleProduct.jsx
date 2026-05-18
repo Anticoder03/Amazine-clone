@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import ProductHorizontal from '../components/ProductHorizontal';
 import { sliders } from '../data/data';
 import Footer from '../components/Footer';
+import { addToCart } from '../utils/cart'
 
 const categoryLabelMap = {
   clothing: 'Clothing',
@@ -68,10 +69,10 @@ const SingleProduct = () => {
                   <h1 className="text-[28px] leading-tight font-medium text-gray-900">
                     {productTitle}
                   </h1>
-                  <button className="text-gray-700 hover:text-black">
+                  {/* <button className="text-gray-700 hover:text-black">
                     <span className="sr-only">Share</span>
                     <span className="text-2xl">⤴</span>
-                  </button>
+                  </button> */}
                 </div>
 
                 <div className="mt-2 text-blue-700 text-sm hover:underline cursor-pointer">
@@ -131,14 +132,17 @@ const SingleProduct = () => {
             <div className="mt-2 text-sm text-gray-700">FREE delivery on eligible orders</div>
             <div className="mt-1 text-sm text-emerald-700 font-medium">In stock</div>
 
-            <div className="mt-5 flex flex-col gap-3">
-              <button className="rounded-full bg-[#ffd814] hover:bg-[#f7ca00] text-gray-900 font-medium py-2.5">
-                Add to Cart
-              </button>
-              <button className="rounded-full bg-[#ffa41c] hover:bg-[#fa8900] text-gray-900 font-medium py-2.5">
-                Buy Now
-              </button>
-            </div>
+                <div className="mt-5 flex flex-col gap-3">
+                  <button
+                    className="rounded-full bg-[#ffd814] hover:bg-[#f7ca00] text-gray-900 font-medium py-2.5"
+                    onClick={() => { addToCart(product); navigate('/cart') }}
+                  >
+                    Add to Cart
+                  </button>
+                  <button className="rounded-full bg-[#ffa41c] hover:bg-[#fa8900] text-gray-900 font-medium py-2.5">
+                    Buy Now
+                  </button>
+                </div>
 
             <div className="mt-5 space-y-2 text-sm text-gray-700">
               <div>Secure transaction</div>

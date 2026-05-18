@@ -1,6 +1,7 @@
 import React from 'react'
 import { data } from '../data/data'
 import { useNavigate } from 'react-router-dom'
+import { addToCart } from '../utils/cart'
 
 const SearchProduct = ({ category, priceRange }) => {
     const navigate = useNavigate()
@@ -69,7 +70,10 @@ const SearchProduct = ({ category, priceRange }) => {
                             </p>
 
                             <div className="mt-4">
-                                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors">
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); addToCart(product); alert('Added to cart') }}
+                                    className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors"
+                                >
                                     Add to cart
                                 </button>
                             </div>

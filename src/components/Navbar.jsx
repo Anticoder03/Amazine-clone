@@ -5,9 +5,22 @@ import { IoLocationOutline } from "react-icons/io5";
 import { PiShoppingCartSimpleBold } from "react-icons/pi";
 import { IoSearchSharp } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom'
+import { getCartCount } from '../utils/cart'
+import { useEffect, useState } from 'react'
 
 const Navbar = ({ setCategory, setSearch }) => {
   const navigate = useNavigate()
+  const [count, setCount] = useState(getCartCount())
+
+  useEffect(() => {
+    const onUpdate = () => setCount(getCartCount())
+    window.addEventListener('cartUpdated', onUpdate)
+    window.addEventListener('storage', onUpdate)
+    return () => {
+      window.removeEventListener('cartUpdated', onUpdate)
+      window.removeEventListener('storage', onUpdate)
+    }
+  }, [])
 
   const handleChane = (e) =>{
     const selectedCategory = e.target.value;
@@ -62,10 +75,10 @@ const Navbar = ({ setCategory, setSearch }) => {
                 <div className="orders">& Orders</div>
               </div>
             </div>
-            <div className="cart-section">
+            <div className="cart-section" role="button" onClick={() => navigate('/cart')}>
               <div className="cart-icon-wrapper">
                 <PiShoppingCartSimpleBold size={32} />
-                <span className="cart-count">1</span>
+                <span className="cart-count">{count}</span>
               </div>
               <span className="cart-text">Cart</span>
             </div>
