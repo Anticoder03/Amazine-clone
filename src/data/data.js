@@ -119,6 +119,46 @@ const data = [
             "reviews": 1500,
             "catogary":"electronics"
         },
+        {
+            "id": 13,
+            "name":"JBL Clip 5, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, 12hrs of Playtime, Integrated Carabiner, Vibrant Colors with Rugged Fabric Design, Dust & Waterproof, Type C (Without Mic, Blue)",
+            "name_sort":"JBL Clip 5",
+            "image": "product13.jpg",
+            "price": 250,
+            "rating": 4.8,
+            "reviews": 1500,
+            "catogary":"electronics"
+        },
+        {
+            "id": 14,
+            "name":"Tribit StormBox 2 Bluetooth Speaker with 34W 360° Surround Sound, XBass Tech, 24H Playtime, IPX7 Waterproof, Bluetooth 5.3, TWS Pairing Portable Wireless Speaker for Outdoor",
+            "name_sort":"Tribit StormBox 2",
+            "image": "product14.jpg",
+            "price": 650,
+            "rating": 4.8,
+            "reviews": 1500,
+            "catogary":"electronics"
+        },
+        {
+            "id": 15,
+            "name":"Tribit XSound Plus 2 30W 5.3 Bluetooth Wireless Speakers,Powerful Louder Stereo Sound with Bass-Enhanced XBass Function,24H Playtime,IPX7 Waterproof,Built in Mic,150ft BT Range for Home/Outdoor,Black",
+            "name_sort":"Tribit XSound Plus 2",
+            "image": "product15.jpg",
+            "price": 1650,
+            "rating": 4.8,
+            "reviews": 1500,
+            "catogary":"electronics"
+        },
+        {
+            "id": 16,
+            "name":"Tribit StormBox Lava Portable Bluetooth Speaker, 80W Loud Wireless Speaker, 24H Playtime, IP67 Waterproof, Bluetooth 5.4, Custom EQ, XBass, Built-in Mic, TWS Pairing for Camping/Beach/Party/Outdoor",
+            "name_sort":"Tribit StormBox Lava",
+            "image":"product16.webp",
+            "price": 1650,
+            "rating": 4.8,
+            "reviews": 1500,
+            "catogary":"electronics"
+        }
         
     ]
 

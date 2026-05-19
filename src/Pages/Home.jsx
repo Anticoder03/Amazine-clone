@@ -30,6 +30,11 @@ const Home = () => {
              <ProductCards title="Deals inspired by your recent history"   products={data.slice(4, 8)} />
              <ProductCards title="Deals you might like in Computers & Accessories" products={data.slice(8, 12)} />
            </div>
+           <div className='flex gap-11 mt-12'>
+              <ProductCards title="Customer's most loved picks for you" products={data.slice(12, 16)} />
+              <ProductCards title="Deals inspired by your recent history"   products={data.slice(4, 8)} />
+              <ProductCards title="Deals you might like in Computers & Accessories" products={data.slice(8, 12)} />
+           </div>
            <ProductHorizontal title="Up to 40% off | Best Deals on smartphones" products={sliders} />
          </>
        )}
